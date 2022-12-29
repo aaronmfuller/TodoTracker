@@ -1,0 +1,10 @@
+.todo-list {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(236, 166, 166);
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 95%;
+}
