@@ -22,7 +22,8 @@ const TodoForm = (props) => {
 
     const todoData = {
       task: enteredTask,
-      date: new Date(enteredDate)
+      date: new Date(enteredDate),
+      id: Math.random().toString()
     };
 
     props.onSaveTodoData(todoData);
