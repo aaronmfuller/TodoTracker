@@ -9,26 +9,44 @@ const TodoList = () => {
 const [todos, setTodos] = useState(getTodoItems());
 
 const saveTodoDataHandler = (enteredTodoData) => {
-    const todoData = {todos, ...enteredTodoData};
-    console.log(todoData);
-    setTodos(todoData);
+    
+  setTodos([...todos, enteredTodoData]);
+    console.log( "todos:", todos);
+    
 };
 
+const handleDelete = (item) => {
+  const newTodos = todos.filter((t) => t.id !== item.id);
+  setTodos(newTodos);
+};
+const completeHandler = (item) => {
+  const updatedTodos = [...todos];
+  updatedTodos[item].completed = !updatedTodos[item].completed;
+  setTodos(updatedTodos);
+  };
   return (
-    <ul>
+<div className="container">
+  <div className="row">
+    <div className="col">
       <div>
         <div className="todo-list">
           <TodoForm 
           onSaveTodoData={saveTodoDataHandler}
           />
         </div>
+        
         <div className="todo-list">
           <TodoItems
           todos={todos}
+          handleDelete={handleDelete}
+          completeHandler={completeHandler}
            />
         </div>
       </div>
-    </ul>
+      </div>
+      </div>
+      </div>
+    
   );
 };
 

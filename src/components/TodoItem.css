@@ -17,6 +17,7 @@
     flex-flow: column-reverse;
     justify-content: flex-start;
     flex: 1;
+    border-radius: 12px
   }
   .todo-item button{
     border-radius: 5px;
@@ -33,15 +34,7 @@
 
   }
   
-  .todo-item__price {
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    background-color: #40005d;
-    border: 1px solid white;
-    padding: 0.5rem;
-    border-radius: 12px;
-  }
+
   
    /* @keyframes wave {
     0% {transform: rotate(-7deg)}
@@ -54,10 +47,12 @@
       align-items: center;
       justify-content: flex-start;
       flex: 1;
+      border-radius: 12px
     }
   
     .todo-item__description h2 {
       font-size: 1.25rem;
+      border-radius: 12px
     }
   
   }
