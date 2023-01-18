@@ -35,7 +35,6 @@ const TodoItems = (props) => {
 										className='form-check-input'
 										type='checkbox'
 										checked={item.completed}
-										key='item.id'
 										onChange={() => props.completeHandler(index)}									/>
 									<label
 										className='form-check-label'
