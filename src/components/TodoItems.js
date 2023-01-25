@@ -39,8 +39,9 @@ const TodoItems = (props) => {
 									<label
 										className='form-check-label'
 										form='flexCheckDefault'
+										
 									>
-										Completed
+										 Completed
 									</label>
 								</div>
 							</div>

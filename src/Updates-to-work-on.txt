@@ -1,0 +1,13 @@
+user accounts, little headshot circles
+headers that say things like "task   |  Due By | "etc
+organize tasks by day. Eg, |Monday | 
+                            task 1...task n etc
+
+types of tasks with different widgets that are appropriate
+more robust input field, with text editor (allowing for bold, font stuff)
+hook up to database
+
+Ability to change due-date
+Due TIME
+
+CALENDAR VIEW!

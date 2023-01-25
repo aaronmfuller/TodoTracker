@@ -13,7 +13,7 @@ const TodoList = () => {
       return new Date(a.date) - new Date(b.date);
     })
     setTodos(newTodos);
-		console.log('todos:', todos);
+		//console.log('todos:', todos);
     
 	};
 
